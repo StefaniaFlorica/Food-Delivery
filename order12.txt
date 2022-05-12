@@ -1,0 +1,7 @@
+Order 12 placed on Tue May 10 10:16:13 EEST 2022 by client: anaa
+
+--->Order summary<---
+BaseProduct:Pepper-Crusted Steak with Horseradish Cream on Grilled Garlic Crostini 	x1
+BaseProduct:Persian Rice Salad 	x1
+BaseProduct:Pico de Gallo 	x1
+Total price:	117.0

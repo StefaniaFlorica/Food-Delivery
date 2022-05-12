@@ -1,0 +1,6 @@
+Order 18 placed on Tue May 10 19:24:50 EEST 2022 by client: qqq
+
+--->Order summary<---
+BaseProduct:Salmon Chowder 	x1
+BaseProduct:Beef Tenderloin Steaks with Mustard-Cognac Sauce 	x1
+Total price:	192.0

@@ -1,0 +1,5 @@
+Order 20 placed on Tue May 10 19:25:03 EEST 2022 by client: qqq
+
+--->Order summary<---
+BaseProduct:Grilled Pork Chops with Classic Barbecue Sauce 	x1
+Total price:	46.0

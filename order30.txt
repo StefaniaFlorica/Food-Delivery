@@ -1,0 +1,6 @@
+Order 30 placed on Wed May 11 19:22:23 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:"Apple ""Flag"" Tart "	x1
+BaseProduct:"""Seethed"" Mussels with Parsley and Vinegar "	x1
+Total price:	48.0

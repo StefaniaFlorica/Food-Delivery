@@ -1,0 +1,5 @@
+The clients that have ordered more than 1 times so far and the value of the order was higher than 50: 
+Client: id=3, user='maya23', password='sss
+Client: id=4, user='qqq', password='qqq
+Client: id=1, user='stefi12', password='azsx
+Client: id=2, user='anaa', password='aaa

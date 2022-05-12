@@ -1,0 +1,5 @@
+Order 15 placed on Tue May 10 10:57:16 EEST 2022 by client: maya23
+
+--->Order summary<---
+BaseProduct:Pork and Pineapple Kebabs with Sweet-and-Sour Sauce 	x1
+Total price:	33.0

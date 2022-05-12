@@ -1,0 +1,6 @@
+Order 24 placed on Wed May 11 19:18:51 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:African Adobo-Rubbed Tuna Steaks 	x1
+BaseProduct:Acini di Pepe Pasta with Garlic and Olives 	x1
+Total price:	72.0

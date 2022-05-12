@@ -1,0 +1,7 @@
+Order 22 placed on Tue May 10 19:28:44 EEST 2022 by client: qqq
+
+--->Order summary<---
+BaseProduct:"""Bloody Mary"" Tomato Toast with Celery and Horseradish "	x1
+BaseProduct:"Spicy Tuna ""Tarts"" with Stuffed Tomatoes "	x1
+BaseProduct:Spicy Lemongrass Tofu 	x1
+Total price:	141.0

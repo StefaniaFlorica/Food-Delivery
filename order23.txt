@@ -1,0 +1,5 @@
+Order 23 placed on Tue May 10 19:29:55 EEST 2022 by client: qqq
+
+--->Order summary<---
+BaseProduct:Spicy Braised Chicken with Mushrooms and Star Anise 	x1
+Total price:	91.0

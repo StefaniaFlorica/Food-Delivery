@@ -1,0 +1,5 @@
+Order 19 placed on Tue May 10 19:24:55 EEST 2022 by client: qqq
+
+--->Order summary<---
+BaseProduct:Baked Polenta with Fontina Cheese 	x1
+Total price:	29.0

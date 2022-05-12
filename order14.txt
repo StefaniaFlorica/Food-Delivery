@@ -1,0 +1,7 @@
+Order 14 placed on Tue May 10 10:57:09 EEST 2022 by client: maya23
+
+--->Order summary<---
+BaseProduct:Pork Tostadas with Corn Salsa 	x1
+BaseProduct:Pork and Sausage Sauté 	x1
+BaseProduct:Pork and Hominy Stew 	x1
+Total price:	154.0

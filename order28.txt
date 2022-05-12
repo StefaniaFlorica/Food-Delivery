@@ -1,0 +1,6 @@
+Order 28 placed on Wed May 11 19:22:06 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:"Apple ""Pizza"" "	x1
+BaseProduct:"Barley ""Risotto"" Carter "	x1
+Total price:	48.0

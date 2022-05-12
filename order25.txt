@@ -1,0 +1,7 @@
+Order 25 placed on Wed May 11 19:21:37 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:"""Blanketed"" Eggplant "	x1
+BaseProduct:"""Blanketed"" Eggplant "	x1
+BaseProduct:"""Blanketed"" Eggplant "	x1
+Total price:	264.0

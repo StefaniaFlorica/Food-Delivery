@@ -1,0 +1,7 @@
+Order 26 placed on Wed May 11 19:21:50 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:"Avocado ""Pesto"" "	x1
+BaseProduct:"Apple ""Flag"" Tart "	x1
+BaseProduct:"Apple ""Flag"" Tart "	x1
+Total price:	81.0

@@ -1,0 +1,5 @@
+Order 27 placed on Wed May 11 19:21:58 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:"Apple ""Flag"" Tart "	x1
+Total price:	17.0

@@ -1,0 +1,7 @@
+Order 11 placed on Mon May 09 23:08:39 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:Peanut Butter and Jelly Tart 	x1
+BaseProduct:Pear Croustade with Hazelnut-Brown Sugar Topping 	x1
+BaseProduct:Pear and Apple Crostata with Five-Spice Whipped Cream 	x1
+Total price:	76.0

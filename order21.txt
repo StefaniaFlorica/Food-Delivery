@@ -1,0 +1,7 @@
+Order 21 placed on Tue May 10 19:25:47 EEST 2022 by client: qqq
+
+--->Order summary<---
+BaseProduct:Soft Fried Tortillas with Tomatillo Salsa and Chicken 	x1
+BaseProduct:Chicken with Tarragon Vinegar Sauce 	x1
+BaseProduct:Coconut Chicken Soup 	x1
+Total price:	192.0
