@@ -49,6 +49,7 @@ public class NameFrame extends JFrame {
         contentPane.add(textField);
         textField.setColumns(10);
 
+
         setVisible(true);
     }
 
