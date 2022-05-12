@@ -49,7 +49,7 @@ public class Controller {
             {
                 adminPasswordView.dispose();
                 adminView=new AdminView();
-                adminView.generateTable(service.getMenuItems().stream().toList());
+                //adminView.generateTable(service.getMenuItems().stream().toList());
                 new AdminController(adminView,service);
             }
             else

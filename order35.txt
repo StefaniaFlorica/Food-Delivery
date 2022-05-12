@@ -1,0 +1,5 @@
+Order 35 placed on Thu May 12 17:19:08 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:Chicken Breasts with Goat Cheese and Rosemary 	x1
+Total price:	41.0

@@ -153,7 +153,7 @@ public class DeliveryService implements Subject,IDeliveryServiceProcessing{
     }
 
     @Override
-    public void insertNewComposite(List<Integer> selectedIndexes) {
+    public void insertNewComposite(String name,List<Integer> selectedIndexes) {
         assert validateList(selectedIndexes);
         List<MenuItem> items= new ArrayList<MenuItem>();
         int oldSize=menuItems.size();
@@ -162,12 +162,19 @@ public class DeliveryService implements Subject,IDeliveryServiceProcessing{
             List<MenuItem> sortedItems=getSortedMenuItemsList();
             items.add(sortedItems.get(index));
         }
-        menuItems.add(new CompositeProduct("comp: ",items));
+        menuItems.add(new CompositeProduct(name+": ",items));
         saveMenuItemsData();
         assert menuItems.size()==oldSize+1;
     }
 
-
+    /**
+     * Clasa care genereaza raportul 1
+     * @Invariant validateTime(timeMin,timeMax)
+     * @Precondition assert validateTime(timeMin,timeMax);
+     * @Postcondition assert collect.size()==0 : "No orders found!";
+     * @param timeMin ora minima
+     * @param timeMax ora maxima
+     */
 
     public void generateReport1(int timeMin, int timeMax){
 
@@ -182,6 +189,13 @@ public class DeliveryService implements Subject,IDeliveryServiceProcessing{
         //assert false : "Report 1 was not created!";
     }
 
+    /**
+     * Clasa care genereaza raportul 2
+     * @Invariant validateData(nrMin)
+     * @Precondition assert validateData(nrMin);
+     * @Postcondition assert result.size()==0 : "No items found!";
+     * @param nrMin nr min de comenzi
+     */
     public void generateReport2(int nrMin)
     {
         assert validateData(nrMin);
@@ -205,10 +219,17 @@ public class DeliveryService implements Subject,IDeliveryServiceProcessing{
             writer.writeToFile("No items found :(");
 
         //assert writer==null: "Report 2 was not created!";
-        //assert result==null : "No items found!";
+        //assert result.size()==0 : "No items found!";
     }
 
-
+    /**
+     * Clasa care genereaza raportul 3
+     * @Invariant validateData(minNrTimes,minPrice);
+     * @Precondition assert validateData(minNrTimes,minPrice);
+     * @Postcondition assert result.size()==0 :  "No clients found!";
+     * @param minNrTimes nr min de timpuri
+     * @param minPrice pretul minim
+     */
     public void generateReport3(int minNrTimes, int minPrice)
     {
         assert validateData(minNrTimes,minPrice);
@@ -232,9 +253,18 @@ public class DeliveryService implements Subject,IDeliveryServiceProcessing{
             result.forEach(item->writer.writeToFile(item.toString()));
         else
             writer.writeToFile("No clients found");
-       // assert result==null :  "No clients found!";
+       // assert result.size()==0 :  "No clients found!";
     }
 
+    /**
+     * Clasa pentru generarea raportului 4
+     * @Invariant validateData(day,month,year)
+     * @Precondition assert validateData(day,month,year);
+     * @Postcondition assert result.size()==0 :  "No items found!";
+     * @param day ziua
+     * @param month luna
+     * @param year anul
+     */
     public void generateReport4(int day,int month, int year)
     {
         assert validateData(day,month,year);
@@ -256,7 +286,7 @@ public class DeliveryService implements Subject,IDeliveryServiceProcessing{
         {
             writer.writeToFile(entry.getKey().getTitle()+" -> ordered x"+entry.getValue()+" times");
         }
-        //assert result==null :  "No items found!";
+        //assert result.size()==0 :  "No items found!";
     }
 
     @Override
@@ -349,6 +379,10 @@ public class DeliveryService implements Subject,IDeliveryServiceProcessing{
         assert menuItemsList.size()==sorted.size():"sorting failed";
         return sorted;
 
+    }
+    public void resetFilterList()
+    {
+        filter1=getSortedMenuItemsList().stream().collect(Collectors.toSet());
     }
 
     /**

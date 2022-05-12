@@ -1,0 +1,5 @@
+Order 33 placed on Thu May 12 16:56:15 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:Ancho Chili Sauce 	x1
+Total price:	77.0

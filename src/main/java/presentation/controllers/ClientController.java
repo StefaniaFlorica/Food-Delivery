@@ -35,6 +35,7 @@ public class ClientController {
             @Override
             public void actionPerformed(ActionEvent e) {
                 clientView.generateTable(service.getSortedMenuItemsList());
+                service.resetFilterList();
                 filterFrame.dispose();
             }
         });

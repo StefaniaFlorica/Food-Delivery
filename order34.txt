@@ -1,0 +1,6 @@
+Order 34 placed on Thu May 12 17:18:59 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:Braised Greek Chicken and Artichokes 	x1
+BaseProduct:Chicken Pouqui 	x1
+Total price:	73.0

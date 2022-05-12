@@ -45,7 +45,7 @@ public class FilterFrame extends JFrame {
     public FilterFrame() {
         setTitle("Filters");
         setBounds(100, 100, 580, 430);
-        setLocationRelativeTo(null);
+        //setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         panel = new JPanel();

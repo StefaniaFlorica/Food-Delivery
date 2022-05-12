@@ -5,6 +5,7 @@ import model.BaseProduct;
 import model.CompositeProduct;
 import model.MenuItem;
 import presentation.views.AdminView;
+import presentation.views.NameFrame;
 import presentation.views.ReportView;
 
 import javax.swing.*;
@@ -22,7 +23,12 @@ public class AdminController {
     {
         adminView= adminView1;
         service=service1;
-        adminView.generateTable(service.getSortedMenuItemsList());
+        adminView.addImportListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                adminView.generateTable(service.getSortedMenuItemsList());
+            }
+        });
         adminView.addDeleteListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -50,6 +56,7 @@ public class AdminController {
 
 
 
+                JOptionPane.showMessageDialog(adminView,"Selected item was edited!");
                 System.out.println("selected index" + indexProduct);
                 service.modifyItem(indexProduct,baseProduct);
                 adminView.generateTable(service.getSortedMenuItemsList());
@@ -81,8 +88,18 @@ public class AdminController {
         adminView.addNewCompositeListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                service.insertNewComposite(adminView.getSelectedIndexes());
-                adminView.generateTable(service.getSortedMenuItemsList());
+                NameFrame nameFrame= new NameFrame();
+                nameFrame.addInsertListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String name=nameFrame.getTextField();
+                        service.insertNewComposite(name,adminView.getSelectedIndexes());
+                        adminView.generateTable(service.getSortedMenuItemsList());
+                        nameFrame.dispose();
+                        JOptionPane.showMessageDialog(adminView,"Composite item "+name+" was inserted!");
+                    }
+                });
+
             }
         });
     }

@@ -1,0 +1,5 @@
+Order 36 placed on Thu May 12 17:19:20 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:"Herbed Polenta ""Fries"" "	x1
+Total price:	69.0

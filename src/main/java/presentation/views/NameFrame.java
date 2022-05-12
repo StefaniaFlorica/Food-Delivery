@@ -1,5 +1,4 @@
 package presentation.views;
-
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -15,15 +14,15 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 
-public class AdminPasswordView extends JFrame {
+public class NameFrame extends JFrame {
 
-    private final JPanel contentPane;
-    private final JPasswordField passwordField;
-    private final JButton btnNewButton;
+    private JPanel contentPane;
+    private JTextField textField;
+    private JButton btnNewButton;
 
-    public AdminPasswordView() {
+    public NameFrame() {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        //setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
         setBounds(100, 100, 455, 303);
         contentPane = new JPanel();
         contentPane.setBackground(new Color(224, 255, 255));
@@ -31,33 +30,33 @@ public class AdminPasswordView extends JFrame {
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
-        JLabel lblNewLabel = new JLabel("___________Enter admin password___________");
+        JLabel lblNewLabel = new JLabel("_______________Enter name_______________");
         lblNewLabel.setForeground(new Color(32, 178, 170));
         lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
         lblNewLabel.setFont(new Font("Century Gothic", Font.BOLD, 18));
         lblNewLabel.setBounds(10, 10, 421, 42);
         contentPane.add(lblNewLabel);
 
-        btnNewButton = new JButton("Log in");
+        btnNewButton = new JButton("Insert");
         btnNewButton.setForeground(new Color(255, 250, 250));
         btnNewButton.setBackground(new Color(32, 178, 170));
         btnNewButton.setFont(new Font("Century Gothic", Font.BOLD, 16));
         btnNewButton.setBounds(118, 166, 192, 42);
         contentPane.add(btnNewButton);
 
-        passwordField = new JPasswordField();
-        passwordField.setForeground(new Color(32, 178, 170));
-        passwordField.setBackground(new Color(255, 250, 250));
-        passwordField.setBounds(118, 87, 192, 42);
-        contentPane.add(passwordField);
+        textField = new JTextField();
+        textField.setBounds(118, 102, 192, 42);
+        contentPane.add(textField);
+        textField.setColumns(10);
+
         setVisible(true);
     }
 
-    public String getPasswordField() {
-        return String.valueOf(passwordField.getPassword());
+    public String getTextField() {
+        return textField.getText();
     }
 
-    public void addEnterListener(ActionListener actionListener)
+    public void addInsertListener(ActionListener actionListener)
     {
         btnNewButton.addActionListener(actionListener);
     }

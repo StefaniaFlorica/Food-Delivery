@@ -1,0 +1,7 @@
+Order 32 placed on Thu May 12 16:56:01 EEST 2022 by client: stefi12
+
+--->Order summary<---
+BaseProduct:Aligot Gratin 	x1
+BaseProduct:Leftover-Roast-Chicken-Stock 	x1
+BaseProduct:Marinated Oriental Chicken 	x1
+Total price:	135.0

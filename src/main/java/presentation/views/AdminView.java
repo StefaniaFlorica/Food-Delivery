@@ -39,6 +39,7 @@ public class AdminView extends JFrame {
     private final JButton btnApplyChanges;
     private final JTable table;
     private final JPanel panelNewItem;
+    private JButton btnImport;
 
     public AdminView() {
         setTitle("Administrator Menu");
@@ -58,6 +59,7 @@ public class AdminView extends JFrame {
         panelTabel.add(new JScrollPane(table));
         table.setRowSelectionAllowed(true);
         table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+
 
         JPanel panelButtons = new JPanel();
         panelButtons.setBounds(0, 395, 1066, 60);
@@ -174,9 +176,20 @@ public class AdminView extends JFrame {
         btnDeleteItem.setBounds(538, 10, 120, 35);
         panelButtons.add(btnDeleteItem);
 
+        btnImport = new JButton("Import");
+        btnImport.setBounds(668, 10, 131, 35);
+        panelButtons.add(btnImport);
+        btnImport.setBackground(Color.LIGHT_GRAY);
+
 
         setVisible(true);
     }
+
+    public void addImportListener(ActionListener actionListener)
+    {
+        btnImport.addActionListener(actionListener);
+    }
+
     public int getSelectedIndex() {
         int selRow = table.getSelectedRow();
         int modelIndex = table.convertRowIndexToModel(selRow);
